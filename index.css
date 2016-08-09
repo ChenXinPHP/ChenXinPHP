@@ -1,2 +1,6 @@
+.clearfloat {clear: both;}
+
 .navbar {text-align: center;padding-top: 10px;}
-.navtitle {font-size: 32px;}
+.navtitle {font-size: 32px;float: left;padding-left: 10px;}
+.navright {float: right;}
+.navright a {padding-right: 10px;}

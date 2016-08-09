@@ -9,8 +9,8 @@
 	<div class="navbar">
 		<div class="navtitle">ChenXinPHP</div>
 		<div class="navright">
-			<div><a href="signin.php"></a></div>
-			<div><a href="signup.php"></a></div>
+			<a href="signin.php">登录</a>
+			<a href="signup.php">注册</a>
 		</div>
 	</div>
 </body>
