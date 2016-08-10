@@ -9,9 +9,18 @@
 	<div class="navbar">
 		<div class="navtitle"><a href="index.php">ChenXinPHP</a></div>
 		<div class="navright">
-			<a href="signin.html">登录</a>
-			<a href="signup.html">注册</a>
+		<?php 
+			$user = $_GET["user"];
+			if ($user != "") {
+				echo "Hello, $user";
+			}
+			else {
+				echo "<a href='signin.html'>登录</a>";
+				echo "<a href='signup.html'>注册</a>";
+			}
+		?>
 		</div>
 	</div>
+	<div class="clearfloat"></div>
 </body>
 </html>
