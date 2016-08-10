@@ -10,10 +10,34 @@
 		<div class="navtitle"><a href="index.php">ChenXinPHP</a></div>
 	</div>
 	<div class="clearfloat"></div>
-	<form action="login.php" method="POST" class="login-form">
-		<p><label>用户名：</label><input type="text" name="userName" autocomplete="off"></p>
-		<p><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input type="text" name="password"></p>
-		<p><input type="submit" value="登录" class="login-button"></p>
+	<form name＝"loginForm" action="login.php" method="POST" class="login-form" onsubmit="return checkForm()">
+		<p>
+			<label>用户名：</label>
+			<input type="text" name="userName" id="userName" autocomplete="off">
+		</p>
+		<p>
+			<label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+			<input type="text" name="password" id="password">
+		</p>
+		<p>
+			<input type="submit" value="登录" class="login-button">
+		</p>
 	</form>
 </body>
+<script type="text/javascript">
+	function checkForm() {
+		var userName = document.getElementById("userName");
+		var password = document.getElementById("password");
+		if (userName.value.length == 0) {
+			alert("用户名不能为空！");
+			userName.focus();
+			return false;
+		}
+		if (password.value.length == 0) {
+			alert("密码不能为空！");
+			password.focus();
+			return false;
+		}
+	}
+</script>
 </html>
