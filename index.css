@@ -2,5 +2,8 @@
 
 .navbar {text-align: center;padding-top: 10px;}
 .navtitle {font-size: 32px;float: left;padding-left: 10px;}
+.navtitle a {text-decoration: none;}
 .navright {float: right;}
 .navright a {padding-right: 10px;}
+.login-form {padding: 10px;}
+.login-button {width: 210px;}

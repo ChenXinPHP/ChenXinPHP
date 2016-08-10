@@ -8,10 +8,12 @@
 <body>
 	<div class="navbar">
 		<div class="navtitle"><a href="index.php">ChenXinPHP</a></div>
-		<div class="navright">
-			<a href="signin.html">登录</a>
-			<a href="signup.html">注册</a>
-		</div>
 	</div>
+	<div class="clearfloat"></div>
+	<form action="login.php" method="POST" class="login-form">
+		<p><label>用户名：</label><input type="text" name="userName" autocomplete="off"></p>
+		<p><label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input type="text" name="password"></p>
+		<p><input type="submit" value="登录" class="login-button"></p>
+	</form>
 </body>
 </html>
